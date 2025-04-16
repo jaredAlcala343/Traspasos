@@ -1,0 +1,138 @@
+/* Estilos para el contenedor principal */
+.dashboard {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  
+}
+
+/* Estilos del título */
+.title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: #053160;
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+/* Contenedor de los botones de acción */
+.actionButtons {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem; 
+  margin-bottom: 2rem; 
+}
+
+/* Estilo de los botones de acción */
+.actionButton {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #053160; 
+  border: none;
+  border-radius: 5px;
+  color: #f9f638;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover de los botones */
+.actionButton:hover {
+  background-color: #f9f638; 
+  color: #053160;
+}
+/* Contenedor de las métricas */
+.metricButtons {
+  display: flex;
+  justify-content: space-between; /* Distribuir los botones de manera equitativa */
+  gap: 1.5rem; /* Espacio entre los botones */
+  margin-bottom: 2rem; /* Espacio debajo de los botones */
+  flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
+}
+
+/* Estilo de cada métrica */
+.metricButton {
+  background-color: #fff;
+  padding: 1.5rem; /* Mayor espacio para un diseño más cómodo */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+  min-width: 200px; /* Ancho mínimo para los botones */
+  margin-bottom: 1rem; /* Margen inferior para que no se peguen los botones */
+}
+
+/* Título de cada métrica */
+.metricButton h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Valor de la métrica */
+.metricButton p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #053160; /* Color verde para los valores */
+}
+
+/* Efecto hover para las métricas */
+.metricButton:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Contenedor de las gráficas */
+.chartBoxes {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+/* Contenedor de cada box con gráfica */
+.box {
+  flex: 1;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Ajustar la altura del contenedor de la gráfica */
+}
+
+.box h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Gráfica específica */
+.box canvas {
+  max-height: 200px; /* Limitar la altura de la gráfica */
+  max-width: 100%;   /* Asegurar que no desborde horizontalmente */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .chartBoxes {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .box {
+    height: 250px; /* Reducir más el tamaño en dispositivos pequeños */
+    width: 250px;
+  }
+
+  .box canvas {
+    max-height: 180px; /* Reducir la gráfica en dispositivos pequeños */
+    max-width: 100%;  
+  }
+}

@@ -1,0 +1,263 @@
+/* PedidoNuevo.module.css */
+
+.panelcontainer {
+  font-family: 'Poppins', sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.navbarSpacing {
+  height: 60px; 
+}
+
+.tituloH3 {
+  font-size: 2rem;
+  color: #053160;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tituloH4 {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+
+
+/* Clase para el formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Clase para las etiquetas */
+.label {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Clases para los inputs y selects */
+.input, .select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.input:focus, .select:focus {
+  border-color: #053160;
+  box-shadow: 0 0 5px rgba(5, 49, 96, 0.3);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputContainer input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputContainer input:focus {
+  border-color: #053160;
+  box-shadow: 0 0 5px rgba(5, 49, 96, 0.3);
+}
+
+.inputContainer button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.inputContainer button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.inputContainer button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Clase para los botones */
+.buttonContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Estilos para la lista de productos */
+.productRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.productRow input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.productRow input:focus {
+  border-color: #053160;
+  box-shadow: 0 0 5px rgba(5, 49, 96, 0.3);
+}
+
+.productRow button {
+  padding: 8px 12px;
+  background: #dc3545;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.productRow button:hover {
+  background: #c82333;
+}
+
+.listaProductos {
+  list-style: none;
+  padding: 0;
+}
+
+.itemProducto {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #495057;
+  font-weight: 500;
+}
+
+
+
+.confirmContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirmContainer input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.confirmContainer input:focus {
+  border-color: #053160;
+  box-shadow: 0 0 5px rgba(5, 49, 96, 0.3);
+}
+
+.confirmContainer button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.confirmContainer button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.confirmContainer button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Estilos para mejorar la usabilidad */
+@media (max-width: 768px) {
+  .panelcontainer {
+    padding: 20px;
+  }
+
+  .tituloH3 {
+    font-size: 1.6rem;
+  }
+
+  .tituloH4 {
+    font-size: 1.2rem;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .inputContainer, .confirmContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #020969;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styles/global.css */
+
+/* Fuente importada */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(242, 242, 242, 1) 20%, rgba(240, 240, 240, 1) 50%, rgba(230, 230, 230, 1) 80%),
+              linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%) -50px 0, 
+              linear-gradient(225deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%) -50px 0;
+  background-size: 100px 100px;  /* Tamaño de la textura de venas */
+  background-attachment: fixed;
+  background-color: #e0e0e0;
+  position: relative;
+  color: var(--foreground);
+}
+
+/* Agregar piedritas usando un patrón de ruido */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/noise.png');
+  opacity: 0.05;  /* Controlar la visibilidad de las piedritas */
+  pointer-events: none;  /* Evitar que interfiera con la interacción del usuario */
+}
+
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: relative; /* El footer se mantiene en su lugar al final del contenido */
+  bottom: 0;
+}

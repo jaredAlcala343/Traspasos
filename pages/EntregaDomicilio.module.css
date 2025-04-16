@@ -1,0 +1,238 @@
+.panelContainer {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 890px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.panelContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.panelContainer input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.panelContainer button {
+  display: block;
+  width: 30%;
+  padding: 7px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.panelContainer button:hover {
+  background-color: #0056b3;
+}
+
+.panelContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.panelContainer table th,
+.panelContainer table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.panelContainer table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.panelContainer table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.panelContainer table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 3px 6px; /* Ajuste para hacer los botones más pequeños */
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 12px; /* Ajuste para hacer el texto más pequeño */
+  width: 30px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination span {
+  padding: 3px 6px; /* Ajuste para hacer los puntos suspensivos más pequeños */
+  margin: 0 2px;
+  font-size: 12px; /* Ajuste para hacer el texto más pequeño */
+}
+
+.buttons1y2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.panelContainer .buttons1y2 .Inventario {
+  background-color: #00ac25;
+  width: 19.5%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.panelContainer .buttons1y2 .Inventario:hover {
+  background-color: #007a25;
+  color: #fff;
+}
+
+.panelContainer .buttons1y2 .Auditoria {
+  background-color: #13115e;
+  width: 19.5%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px; 
+  margin-right: 10px;
+}
+
+.panelContainer .buttons1y2 .Auditoria:hover{
+  background-color: #7a0000;
+  color: #fff;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.panelContainer .buttons1y2 .Inventario:disabled {      
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.panelContainer .buttons1y2 .Inventario:disabled:hover {      
+  background-color: #a09b9b;
+  cursor: not-allowed;
+}
+
+
+.buttons1y2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.panelContainer .buttons1y2 .Inventario {
+  background-color: #00ac25;
+  width: 19.5%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.panelContainer .buttons1y2 .Inventario:hover {
+  background-color: #007a25;
+  color: #fff;
+}
+
+.panelContainer .buttons1y2 .Auditoria {
+  background-color: #13115e;
+  width: 19.5%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px; 
+  margin-right: 10px;
+}
+
+.panelContainer .buttons1y2 .Auditoria:hover{
+  background-color: #7a0000;
+  color: #fff;
+}
